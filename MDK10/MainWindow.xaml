@@ -1,0 +1,32 @@
+﻿<Window x:Class="MDK10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MDK10"
+        mc:Ignorable="d"
+        Title="MDK10" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0,2" StartPoint="1,1">
+            <GradientStop Color="Azure" Offset="1"/>
+            <GradientStop Color="Pink" Offset="0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Menu Margin="0,0,0,385" Background="LightPink">
+            <MenuItem Header="Выход" ToolTip="Кнопка выход" Click="Exit"/>
+            <MenuItem Header="О программе" ToolTip="Кнопка о программе " Click="About"/>
+        </Menu>
+        <ListBox x:Name="lb" Background="Pink" ToolTip="Вывод чисел" Margin="12,70,442,189"/>
+        <TextBox HorizontalAlignment="Left" Margin="363,104,0,0" TextWrapping="Wrap" ToolTip="Тут количество положительных чисел" x:Name="tb1" VerticalAlignment="Top" Width="175" Height="49" IsEnabled="True" />
+        <TextBox HorizontalAlignment="Left" Margin="567,104,0,0" ToolTip="Тут количество отрицательных чисел"  TextWrapping="Wrap" x:Name="tb2" VerticalAlignment="Top" Width="175" Height="49"  IsEnabled="True"/>
+        <Button Content="start" ToolTip="Кнопка запуска программы"  Background="Pink" HorizontalAlignment="Left" Margin="567,312,0,0" Click="Start"  VerticalAlignment="Top" Width="198" Height="47" RenderTransformOrigin="0.488,1.243"/>
+        <Label Content="Количество отрицательных" HorizontalAlignment="Left" Margin="363,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.716,-2.921" Width="175"/>
+        <Label Content="Количество положительных" HorizontalAlignment="Left" Margin="567,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.716,-2.921" Width="175"/>
+        <TextBox HorizontalAlignment="Left" Margin="461,196,0,0" ToolTip="Тут надо ввести  количество чиел в массиве"  TextWrapping="Wrap" x:Name="tb3" VerticalAlignment="Top" Width="175" Height="49"/>
+        <Label Content="Количество чисел в массиве" HorizontalAlignment="Left" Margin="462,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.716,-2.921" Width="174"/>
+        <Button Content="clear" ToolTip="Кнопка очистки полей"  Background="Pink" HorizontalAlignment="Left" Margin="328,312,0,0" Click="Clear"  VerticalAlignment="Top" Width="198" Height="47" RenderTransformOrigin="0.488,1.243"/>
+
+
+    </Grid>
+</Window>
